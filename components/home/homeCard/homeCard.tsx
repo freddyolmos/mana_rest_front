@@ -11,7 +11,7 @@ interface HomeCardProps {
 function HomeCard({ image, description, price, title, discont }: HomeCardProps) {
   
   return (
-    <Card shadow="sm" padding="lg" radius="md" withBorder m="md">
+    <Card shadow="sm" padding="lg" radius="md" withBorder>
       <Card.Section>
         <Image
           src={image}

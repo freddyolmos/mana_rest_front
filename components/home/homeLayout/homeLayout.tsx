@@ -28,8 +28,9 @@ export default function HomeLayout() {
   return (
     <SimpleGrid
       cols={{ base: 1, sm: 2, lg: 5 }}
-      spacing={{ base: 10, sm: 'xl' }}
-      verticalSpacing={{ base: 'md', sm: 'xl' }}
+      spacing={{ base: 10, sm: 'md' }}
+      verticalSpacing={{ base: 'md', sm: 'md' }}
+      m="xs"
     >
       {foods.map(food => (
         <HomeCard
@@ -38,7 +39,7 @@ export default function HomeLayout() {
           description={food.description}
           price={parseFloat(food.price)}
           title={food.title}
-          discont={food.store ? '10%' : undefined}
+          discont={food.store ? '10% desc.' : undefined}
         />
       ))}
     </SimpleGrid>
